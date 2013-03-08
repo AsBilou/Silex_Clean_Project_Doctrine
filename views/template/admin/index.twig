@@ -1,0 +1,11 @@
+{%extends 'layout/admin/base.twig'%}
+{% block stylesheet %}
+    {{ parent() }}
+{% endblock %}
+{% block content %}
+    <h1>hello admin !</h1>
+    <a href="{{ path('admin_logout') }}" class="navbar-link">Deconnexion</a>
+{% endblock %}
+{% block javascript %}
+    {{ parent() }}
+{% endblock %}
